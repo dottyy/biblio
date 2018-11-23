@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biblioteca Isa</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width, user-scalable=no, initial-scale=1,maximun-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script type="text/javascript" src="js/formulario.js"></script>
+</head>
+<body id="regis" onload="limpiar()">
+ <header>
+ 	<div class="contenedor">
+ 		<h1>Biblioteca Isa</h1>
+ 		<input type="checkbox" id="menu-bar">
+ 		<label class="icon-menu" for="menu-bar"></label>
+ 		<nav class="menu">
+ 			<a href="">Registrar Bibliotecario</a>
+ 			<a href="">Registrar Libro</a>
+ 			<a href="">Registrar Cliente</a>	
+ 			<a href="">Prestamos</a>
+ 			<a href="">Devoluciones</a>
+ 			<a href="">Libros</a>
+ 			<a href="">Registrar Cliente</a>
+ 			
+ 		</nav>
+ 		
+ 	</div>
+ </header>
+ <form name="login" method="POST" action="validarlogin.php">
+	<h2>Registro Bibliotecario</h2>
+	<input type="text" id="ci" name="CI" placeholder="C.I.">
+	<input type="text" id="Nombre" name="Nombre" placeholder="Nombres">
+	<input type="text" id="Apellido" name="Apellido" placeholder="Apellidos">
+	<input type="text" id="Correo" name="Correo" placeholder="Correo">
+	<input type="text" id="Telefono" name="Celular" placeholder="Fijo o Celular">
+	<input type="text" id="password" name="password" placeholder="Ingrese su contraseña">
+	
+	<input type="submit" value="Registrar" name="submit">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biblioteca Isa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width, user-scalable=no, initial-scale=1,maximun-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="text/javascript" src="js/formulario.js"></script>
+</head>
+<body id="regis" onload="limpiar()">
+ <header>
+  <div class="contenedor">
+    <h1>Biblioteca Isa</h1>
+    <input type="checkbox" id="menu-bar">
+    <label class="icon-menu" for="menu-bar"></label>
+    <nav class="menu">
+      <a href="inicio.php">Registrar Bibliotecario</a>
+      <a href="registrolibros.php">Registrar Libro</a>
+      <a href="registroclientes.php">Registrar Cliente</a>  
+      <a href="">Prestamos</a>
+      <a href="">Devoluciones</a>
+      <a href="libros.php">Libros</a>
+      <a href="bibliotecario.php">Bibliotecarios</a>
+      <a href="clientes.php">Clientes</a>
+    </nav>
+    
+  </div>
+ </header>
+ <form name="login" method="POST" action="validarlogin.php">
+  <h2>Registro de Prestamo</h2>
+		        <hr size=1>		        
+		        <br><center>
+		            <form name='vpro' action='rcompra.php' method='GET'>
+                <table>
+                <tr>
+                  <td>id_cliente:</td><td>
+                      <script language='javascript'>var vp = new Array();var vpre = new Array();i=0;</script>
+                      <select name="qprv" id='qprv'>
+                          <option value='0'>Seleccione Proveedor</option>
+                          
+                  <script language='javascript'>
+                       document.getElementById("qprv").focus();
+                  </script>
+                </td></tr>
+                
+                <tr>
+                  <td>id_libro:</td><td>
+                      <select name="qpro" id='qpro' onchange='pprecio()'>
+                          <option value='0'>Seleccione Producto</option>
+                          
+                </td></tr>
+                <td>nombre_libro:</td><td>
+                      <select name="qpro" id='qpro' onchange='pprecio()'>
+                          <option value='0'>Seleccione Producto</option>
+                          
+                </td></tr>
+                <tr>
+                  <td>Fecha de prestamo: </td><td><input type="text" name="qcan" id="qcan"></td></tr><br><br>
+              
+                
+                <tr><td><input type="button" value="Procesar" onclick='enviar()'></td><td><input type="reset" value="Cancelar"></td></tr>
+                </form>
+                </table>
+                <br>                
+		      
+		        
+		      </tr>
+		    </table>
+		<!-- InstanceEndEditable -->
+  
+</body>
